@@ -1,0 +1,21 @@
+Public Class Form1
+    Private Sub lblShowNames_Click(sender As Object, e As EventArgs) Handles lblShowNames.Click
+
+    End Sub
+
+    Private Sub txtFirstName_TextChanged(sender As Object, e As EventArgs) Handles txtFirstName.TextChanged
+
+    End Sub
+
+    Private Sub btnHiddenNames_Click(sender As Object, e As EventArgs) Handles btnHiddenNames.Click
+        Dim firstName As String
+        Dim lastName As String
+
+        firstName = txtFirstName.Text
+        lastName = txtLastName.Text
+
+        lblShowNames.Text = "Welcome " & firstName & " " & lastName & " to our VB class!"
+
+
+    End Sub
+End Class
