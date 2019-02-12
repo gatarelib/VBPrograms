@@ -1,0 +1,26 @@
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim Num1 As Integer
+        Dim Num2 As Integer
+        Dim T_Sum As Integer
+
+        Num1 = txtNum1.Text
+        Num2 = txtNum2.Text
+        T_Sum = Num1 + Num2
+
+        lblResult.Text = T_Sum
+
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtNum1.TextChanged
+
+    End Sub
+
+    Private Sub T_Sum_TextChanged(sender As Object, e As EventArgs) Handles lblResult.TextChanged
+
+    End Sub
+End Class
