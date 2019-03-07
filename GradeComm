@@ -1,0 +1,31 @@
+Public Class Form1
+    Private Sub btnComment_Click(sender As Object, e As EventArgs) Handles btnComment.Click
+        'decalre variables
+        Dim grade As String
+        'assign values to the variables
+        grade = txtGrade.Text
+        ' Select Case
+        Select Case grade
+            Case "A"
+                lblResult.Text = "Excellent"
+            Case "B"
+                lblResult.Text = "Very Good"
+            Case "C"
+                lblResult.Text = "Good"
+            Case "D"
+                lblResult.Text = "Fair"
+            Case "F"
+                lblResult.Text = "Poor"
+            Case Else
+                lblResult.Text = "Invalid Grade"
+        End Select
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtGrade.TextChanged
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles lblResult.Click
+
+    End Sub
+End Class
